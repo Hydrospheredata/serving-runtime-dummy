@@ -27,7 +27,7 @@ lazy val logDependencies = Seq(
 
 lazy val grpcDependencies = Seq(
   "com.thesamet.scalapb" %% "scalapb-runtime-grpc" % scalapb.compiler.Version.scalapbVersion exclude("com.google.api.grpc", "proto-google-common-protos"),
-  "io.hydrosphere" %% "serving-grpc-scala" % "2.0.0-rc7dev1" exclude("com.google.api.grpc", "proto-google-common-protos"),
+  "io.hydrosphere" %% "serving-grpc-scala" % "2.0.0" exclude("com.google.api.grpc", "proto-google-common-protos"),
   "io.grpc" % "grpc-netty" % scalapb.compiler.Version.grpcJavaVersion exclude("com.google.api.grpc", "proto-google-common-protos")
 )
 

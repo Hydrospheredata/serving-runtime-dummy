@@ -3,7 +3,7 @@ def repository = 'serving-runtime-dummy'
 def buildFunction={
     sh "sbt compile"
     sh "sbt test"
-    sh "sbt docker"
+    sh "sbt docker:publishLocal"
 }
 
 def collectTestResults = {
